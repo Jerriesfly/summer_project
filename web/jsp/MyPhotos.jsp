@@ -57,7 +57,7 @@
                             out.println("<div class='descriptionDiv'>");
                             out.println("<h1>" + travelImage.getTitle() + "</h1>");
                             out.println("<p>" + travelImage.getDescription() + "</p>");
-                            out.println("<a href='" + request.getContextPath() + "jsp/Upload.jsp?id=" + travelImage.getImageID() + "'>");
+                            out.println("<a href='" + request.getContextPath() + "/jsp/Upload.jsp?id=" + travelImage.getImageID() + "'>");
                             out.println("<button class='modify' value='Modify'>Modify</button>");
                             out.println("</a>");
                             out.println("<a href='" + request.getContextPath() + "/DeletePhotoServlet?id=" + travelImage.getImageID() + "'>");

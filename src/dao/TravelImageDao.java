@@ -120,4 +120,28 @@ public class TravelImageDao {
         JdbcUtil.close(resultSet, preparedStatement, connection);
         return ids;
     }
+
+    public int getCityCode(String asciiName) throws SQLException {
+        Connection connection = JdbcUtil.getConnection();
+        String sql = "SELECT GeoNameID FROM geocities WHERE geocities.AsciiName = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, asciiName);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        int cityCode = resultSet.getInt(1);
+        JdbcUtil.close(resultSet, preparedStatement, connection);
+        return cityCode;
+    }
+
+    public String getCountryISO(String asciiName) throws SQLException {
+        Connection connection = JdbcUtil.getConnection();
+        String sql = "SELECT Country_RegionCodeISO FROM geocities WHERE geocities.AsciiName = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1, asciiName);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.next();
+        String countryISO = resultSet.getString(1);
+        JdbcUtil.close(resultSet, preparedStatement, connection);
+        return countryISO;
+    }
 }

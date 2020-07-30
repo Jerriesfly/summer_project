@@ -38,7 +38,7 @@
 
     <div class="content">
         <form onsubmit="return checkForm()" method="post"
-              action="<%= request.getContextPath()%>/UploadPhotoServlet" enctype="multipart/form-data">
+              action="<%= request.getContextPath()%>/UploadServlet" enctype="multipart/form-data">
             <div id="preview">
                 <%
                     if(isModify){
@@ -57,6 +57,8 @@
             <div id="information">
                 <p>Title of the photo:</p>
                 <input name="title" type="text" id="title" value="<%= isModify ? travelImage.getTitle() : "" %>" required>
+                <input type="hidden" value="<%=isModify%>" name="isModify">
+                <input type="hidden" value="<%=travelImage.getImageID()%>" name="imageID">
                 <p>Description of the photo:</p>
                 <textarea name="description" id="description" required><%= isModify ? travelImage.getDescription() : "" %></textarea>
                 <select name="content" id="content">

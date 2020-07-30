@@ -31,5 +31,6 @@
     <orderEntry type="library" name="mchange-commons-java-0.2.12" level="project" />
     <orderEntry type="library" name="jstl" level="project" />
     <orderEntry type="library" name="standard" level="project" />
+    <orderEntry type="library" name="commons-fileupload-1.2.1" level="project" />
   </component>
 </module>
