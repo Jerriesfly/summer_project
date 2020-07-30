@@ -1,0 +1,81 @@
+.content{
+    padding:0;
+}
+
+button{
+    width:75px;
+    height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.modify{
+    color: purple;
+}
+
+.delete{
+    color: red;
+}
+
+.page {
+    margin: 0;
+    width: 100%;
+}
+
+.content-wrapper{
+    min-height: 530px;
+}
+
+.content{
+    margin-bottom: 10px;
+}
+
+
+#myFootprintsWrapper{
+    width: 100%;
+}
+
+#myFootprintsWrapper table{
+    width: 100%;
+}
+
+#myFootprintsWrapper tr {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    margin: 0;
+    background-clip: padding-box;
+    border-bottom: 1px rgb(235, 237, 240) solid;
+}
+
+#myFootprintsWrapper tr:hover {
+    background-color: rgb(243, 245, 248);
+}
+
+#myFootprintsWrapper .imgDiv {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin-right:30px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#myFootprintsWrapper .imgDiv img{
+    position: relative;
+    cursor: grab;
+}
+
+#myFootprintsWrapper .descriptionDiv h1{
+    margin:0;
+}
+
+#myFootprintsWrapper .descriptionDiv p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}

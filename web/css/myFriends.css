@@ -1,0 +1,46 @@
+.content {
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#userName {
+    font-size: 30px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+}
+
+.modify {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    float: right;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.single {
+    padding: 10px;
+    border-top: 1px gray dashed;
+}
+
+.single span {
+    font-size: 20px;
+}
+
+.content-wrapper {
+    min-height: 600px;
+}
+
+
+

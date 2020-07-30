@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <session-config>
+        <session-timeout>60</session-timeout>
+    </session-config>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Detail</servlet-name>
+        <servlet-class>servlets.DetailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Detail</servlet-name>
+        <url-pattern>/DetailServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <servlet-class>servlets.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/SearchServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyPhotos</servlet-name>
+        <servlet-class>servlets.MyPhotoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyPhotos</servlet-name>
+        <url-pattern>/MyPhotoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyFriends</servlet-name>
+        <servlet-class>servlets.MyFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFriends</servlet-name>
+        <url-pattern>/MyFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetStatus</servlet-name>
+        <servlet-class>servlets.SetStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetStatus</servlet-name>
+        <url-pattern>/SetStatusServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MakeInvitation</servlet-name>
+        <servlet-class>servlets.MakeInvitationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MakeInvitation</servlet-name>
+        <url-pattern>/MakeInvitationServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePhoto</servlet-name>
+        <servlet-class>servlets.DeletePhotoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePhoto</servlet-name>
+        <url-pattern>/DeletePhotoServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFriend</servlet-name>
+        <servlet-class>servlets.AddFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFriend</servlet-name>
+        <url-pattern>/AddFriendServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MyFavorites</servlet-name>
+        <servlet-class>servlets.MyFavoriteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyFavorites</servlet-name>
+        <url-pattern>/MyFavoriteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostComment</servlet-name>
+        <servlet-class>servlets.PostCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostComment</servlet-name>
+        <url-pattern>/PostCommentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFavor</servlet-name>
+        <servlet-class>servlets.DeleteFavorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFavor</servlet-name>
+        <url-pattern>/DeleteFavorServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>servlets.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>VerifyCode</servlet-name>
+        <servlet-class>servlets.VerifyCodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>VerifyCode</servlet-name>
+        <url-pattern>/VerifyCodeServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>Filter.EncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+</web-app>

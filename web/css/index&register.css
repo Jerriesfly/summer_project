@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(249, 249, 249);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    min-height: 715px;
+    padding-top:20px;
+}
+
+h1 {
+    margin: 10px;
+    font-family: Papyrus, fantasy ;
+    color: black;
+}
+
+#formTable {
+    color: black;
+    background: rgb(255, 255, 255);
+    border: 1px rgb(222, 222, 222) solid;
+    margin: auto auto;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left;
+    font-family: Papyrus, fantasy;
+    line-height: 35px;
+}
+
+#formTable .error{
+    color: red;
+    line-height: 25px;
+}
+
+#formTable input{
+    font-size: 20px;
+    border-radius: 5px;
+    padding:5px;
+    width: 95%;
+    border: 1px rgb(222, 222, 222) solid;
+}
+
+#formTable #verifyCode{
+    width: 47%;
+    margin-right: 20px;
+}
+
+#formTable #submit{
+    margin-top: 15px;
+    width:95%;
+    background-image: linear-gradient(rgb(131, 202, 104), rgb(106, 165, 83));
+    color: white;
+}
+
+#formTable #submit:hover{
+    background-image: linear-gradient(rgb(80, 202, 62), rgb(70, 165, 51));
+}
+
+#icon:hover{
+    cursor: grab;
+}
+
+p{
+    color: #888888;
+    font-size:10px;
+}
+
+a{
+    color: rgb(24, 51, 229);
+    text-decoration: none;
+}
+
+footer{
+    height: auto;
+    background-color: transparent;
+    padding: 0 10px;
+}
+
+footer p {
+    color: #888888;
+}
+
+#strength{
+    font-size: 15px;
+    margin: 0;
+}
+
+#strength span {
+    width: 20px;
+    color: #fff;
+    overflow: hidden;
+    margin-left: 20px;
+    background: #D7D9DD;
+    text-align: center;
+}
+
+#strength .s1{
+    background-color: red;
+}
+
+#strength .s2{
+    background-color: orange;
+}
+
+#strength .s3{
+    background-color: green;
+}
+
